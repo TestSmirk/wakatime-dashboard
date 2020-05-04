@@ -1,7 +1,7 @@
 // @flow
 
 import * as React from 'react';
-import { Router, browserHistory } from 'react-router';
+import { Router, hashHistory } from 'react-router';
 import { IntlProvider } from 'react-intl';
 import { IntlProvider as RSIntlProvider } from 'rsuite';
 
@@ -16,7 +16,7 @@ class App extends React.Component<Props> {
     return (
       <IntlProvider locale="en" messages={locales.en}>
         <RSIntlProvider locale={enGB}>
-          <Router history={browserHistory} routes={routes} />
+          <Router history={hashHistory} routes={routes} />
         </RSIntlProvider>
       </IntlProvider>
     );

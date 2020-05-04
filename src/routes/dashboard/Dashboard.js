@@ -28,6 +28,18 @@ class Dashboard extends React.Component {
         {
           value: 90,
           label: 'Last 90 Days'
+        },
+        {
+          value: 180,
+          label: 'Last 180 Days'
+        },
+        {
+          value: 2790,
+          label: 'Last 270 Days'
+        },
+        {
+          value: 360,
+          label: 'Last 360 Days'
         }
       ],
       chartData: []

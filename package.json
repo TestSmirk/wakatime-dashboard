@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "Wakatime dashboard which fetching data from gist",
   "main": "lib/index.js",
+  "homepage": ".",
   "directories": {
     "lib": "lib/"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development --progress --hot --devtool source-map",
     "clear-dist": "rm -rf dist",
-    "build-webpack": "cross-env NODE_ENV=production  webpack --mode production --progress && cp -R public/* ./dist/ ",
-    "build": "npm run clear-dist && npm run build-webpack",
+    "build-webpack": "cross-env NODE_ENV=production  webpack --mode production --progress",
+    "build": "npm run build-webpack",
     "prepages": "npm run build",
     "pages": "node gh-pages.js",
     "test": "karma start"
